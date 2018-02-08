@@ -9,8 +9,9 @@ class SearchBar extends Component {
 
     render() { 
         return ( 
-            <div>
+            <div className="search-bar">
                 <input 
+                    className="form-control"
                     value={this.state.term}
                     onChange={e => this.setState({ term: e.target.value })}
                 />
